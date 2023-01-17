@@ -1,0 +1,10 @@
+<h3>Gráfico de Donut, cargado datos desde servicio http</h3>
+<div class="row">
+    <div class="col-7">
+        <div *ngIf="loading" class="alert alert-primary" role="alert">
+            Cargando...
+        </div>
+        <app-grafico-donut [doughnutChartData]="doughnutChartData"></app-grafico-donut>
+        <span class="float-end text-primary">Info de https://sprint09.cerolab.com/datadonut</span>
+    </div>
+</div>

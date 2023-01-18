@@ -2,7 +2,6 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
-
 // Todo para hacer un gráfico de barras excepto los datos que vendrán desde un @Input
 
 @Component({
@@ -51,9 +50,9 @@ export class GraficoBarraComponent {
     this.barChartData.datasets[0].data = [
       Math.round(Math.random() * 100), 59, 80,
       Math.round(Math.random() * 100), 56,
-      Math.round(Math.random() * 100),
-      40];
-
+      Math.round(Math.random() * 100), 40
+      ];
+      
     this.chart?.update();
   }
 
